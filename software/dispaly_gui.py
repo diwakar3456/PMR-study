@@ -17,7 +17,7 @@ class SignalCommunicate(QObject):
 class WelcomeScreen(QMainWindow):
     def __init__(self):
         super(WelcomeScreen, self).__init__()
-        loadUi(r"ui_file.ui",self)
+        loadUi(r"software\ui_file.ui",self)
         self.pushbuttonstart.clicked.connect(self.start_assess)
         self.pushbuttonstop.clicked.connect(self.stop_assess)
         self.pushbuttoncalibrate.clicked.connect(self.calibrate_gyro)

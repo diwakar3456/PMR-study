@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1198</width>
+    <width>1261</width>
     <height>625</height>
    </rect>
   </property>
@@ -21,7 +21,7 @@
    <widget class="QFrame" name="circularProgressBarbase">
     <property name="geometry">
      <rect>
-      <x>890</x>
+      <x>930</x>
       <y>30</y>
       <width>320</width>
       <height>320</height>
@@ -221,7 +221,7 @@ color: rgb(255, 123, 123);</string>
      <string notr="true">border-width: 0px; border-style: solid</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -466,10 +466,10 @@ QComboBox QAbstractItemView {
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>940</x>
+      <x>980</x>
       <y>350</y>
       <width>233</width>
       <height>241</height>
