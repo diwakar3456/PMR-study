@@ -364,6 +364,16 @@ QComboBox QAbstractItemView {
          <string>Knee</string>
         </property>
        </item>
+       <item>
+        <property name="text">
+         <string>Hip</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Ankle</string>
+        </property>
+       </item>
       </widget>
      </item>
      <item>

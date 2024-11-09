@@ -55,7 +55,13 @@ class WelcomeScreen(QMainWindow):
             self.comboBoxmovement.addItems([' ','Flexion_Extension', 'Abduction_lAdduction', 'External Rotation','Internal Rotation'])
         elif self.comboBoxjoint.currentText() == 'Knee':
             self.comboBoxmovement.clear()
-            self.comboBoxmovement.addItems([' ','Flexion'])
+            self.comboBoxmovement.addItems([' ','Flexion','Extension'])
+        elif self.comboBoxjoint.currentText() == 'Hip':
+            self.comboBoxmovement.clear()
+            self.comboBoxmovement.addItems([' ','Flexion', 'Extension'])
+        elif self.comboBoxjoint.currentText() == 'Ankle':
+            self.comboBoxmovement.clear()
+            self.comboBoxmovement.addItems([' ','Flexion', 'Extension'])
 
     def progressBarValue(self, value):
         styleSheet = """
