@@ -17,7 +17,7 @@ class SignalCommunicate(QObject):
 class WelcomeScreen(QMainWindow):
     def __init__(self):
         super(WelcomeScreen, self).__init__()
-        loadUi(r"ui_file.ui",self)
+        loadUi(r"software\ui_file.ui",self)
         self.pushbuttonstart.clicked.connect(self.start_assess)
         self.pushbuttonstop.clicked.connect(self.stop_assess)
         self.pushbuttoncalibrate.clicked.connect(self.calibrate_gyro)
@@ -55,7 +55,7 @@ class WelcomeScreen(QMainWindow):
             self.comboBoxmovement.addItems([' ','Flexion_Extension', 'Abduction_lAdduction', 'External Rotation','Internal Rotation'])
         elif self.comboBoxjoint.currentText() == 'Knee':
             self.comboBoxmovement.clear()
-            self.comboBoxmovement.addItems([' ','Flexion'])
+            self.comboBoxmovement.addItems([' ','Flexion','Extension'])
 
     def progressBarValue(self, value):
         styleSheet = """
@@ -138,7 +138,7 @@ class WelcomeScreen(QMainWindow):
             global path3
             self.labeljoint.setText(self.comboBoxjoint.currentText())
             self.labelmovement.setText(self.comboBoxmovement.currentText())
-            path2 = r'data'
+            path2 = r'software\data'
             id_path = os.path.join(path2, self.lineedithospitalnumber.text())
             jointpath=os.path.join(id_path,self.comboBoxjoint.currentText())
             movementpath=os.path.join(jointpath,self.comboBoxmovement.currentText())
